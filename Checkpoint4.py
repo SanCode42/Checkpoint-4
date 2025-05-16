@@ -3,7 +3,8 @@ my_list = [1, 2, 3, 4, 5]
 my_tuple = (1, 2, 3, 4, 5)
 my_float = 9.84
 my_integer = 37
-my_decimal = 53.27
+from decimal import Decimal
+my_decimal = Decimal(53.27)
 my_dictionary = {
     'día': 'lunes',
     'mes': 'enero',
@@ -11,7 +12,8 @@ my_dictionary = {
 }
 
 #Exercise 2
-print(int(my_float))
+import math
+print(math.ceil(my_float))
 
 #Exercise 3
 import math
